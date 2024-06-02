@@ -86,7 +86,7 @@ public class ProblemUserTests extends TestInit {
     }
 
     @Test
-    @Description("Negative: User check basket with inventory as a problem user ")
+    @Description("Negative: User check about item in burger menu with inventory as a problem user ")
     public void userCheckAboutInBurgerMenuAsProblemUser() {
         LoginPage loginPage = new LoginPage(driver);
         SideBarComponent sideBarComponent = new SideBarComponent(driver);
