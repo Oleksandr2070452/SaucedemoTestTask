@@ -1,5 +1,6 @@
 package components;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
@@ -17,6 +18,7 @@ public class SideBarComponent extends BasePage {
         return waitUntilElementToBeClickableByXpath(BURGER_MENU_BUTTON);
     }
 
+    @Step("Click burger menu button")
     public SideBarComponent clickBurgerMenuButton() {
         getBurgerMenuButton().click();
         return this;
@@ -26,6 +28,7 @@ public class SideBarComponent extends BasePage {
         return waitUntilElementToBeClickableByXpath(ABOUT_ITEM);
     }
 
+    @Step("Click about button")
     public SideBarComponent clickAboutButton() {
         getAboutButton().click();
         return this;
@@ -35,6 +38,7 @@ public class SideBarComponent extends BasePage {
         return waitUntilElementToBeClickableByXpath(LOGOUT_ITEM);
     }
 
+    @Step("Click logout button")
     public SideBarComponent clickLogoutButton() {
         getLogoutButton().click();
         return this;
