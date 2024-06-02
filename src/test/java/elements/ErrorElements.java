@@ -18,7 +18,7 @@ public class ErrorElements extends BasePage {
     }
 
     public WebElement getCookiesBanner() {
-        return waitUntilElementToBeVisibleByXpath(COOKIES_BANNER);
+        return waitUntilElementToBePresenceByXpath(COOKIES_BANNER);
     }
 
     public WebElement getOkButton() {

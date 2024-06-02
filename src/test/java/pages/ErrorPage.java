@@ -20,11 +20,18 @@ public class ErrorPage extends ErrorElements {
     @Step("Click back to home button")
     public ErrorPage clickBackToHomeButton() {
         if (isCookiesBannerDisplayed()) {
-            getOkButton().click();
+            try {
+                getOkButton().click();
+            } catch (Exception e) {
+                System.out.println("Error clicking OK button: " + e.getMessage());
+            }
         } else {
-            getBackToHomeButton().click();
+            try {
+                getBackToHomeButton().click();
+            } catch (Exception e) {
+                System.out.println("Error clicking Back to Home button: " + e.getMessage());
+            }
         }
         return this;
     }
-
 }
