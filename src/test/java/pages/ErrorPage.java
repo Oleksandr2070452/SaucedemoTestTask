@@ -1,6 +1,7 @@
 package pages;
 
 import elements.ErrorElements;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
 public class ErrorPage extends ErrorElements {
@@ -16,6 +17,7 @@ public class ErrorPage extends ErrorElements {
         }
     }
 
+    @Step("Click back to home button")
     public ErrorPage clickBackToHomeButton() {
         if (isCookiesBannerDisplayed()) {
             getOkButton().click();

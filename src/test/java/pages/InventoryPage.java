@@ -40,6 +40,7 @@ public class InventoryPage extends InventoryElements {
         return this;
     }
 
+    @Step("Click low to high price option")
     public InventoryPage clickFromLowToHighPriceOption() {
         getPriceFromLowToHigh().click();
         return this;
